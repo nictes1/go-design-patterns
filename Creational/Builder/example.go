@@ -4,9 +4,10 @@ import "fmt"
 
 func main() {
 
-	builder := NewNotificationBuilder()
+	var builder = newNotificationBuilder()
 	builder.SetTitle("New Notification")
 	builder.SetIcon("icon-notification.png")
+	builder.SetSubtitle("This a subtitle")
 	builder.SetImage("image.png")
 	builder.SetPriority(10)
 	builder.SetMessage("This a notification message")
